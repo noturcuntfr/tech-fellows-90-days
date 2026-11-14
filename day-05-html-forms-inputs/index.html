@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 05 - Student Registration Demo</title>
+</head>
+<body>
+
+    <header>
+        <h1>Student Registration Demo</h1>
+        <p>This form is created for HTML practice only.
+           No registration details will be saved.</p>
+
+        <nav>
+            <a href="../day-04-tables-structured-content/index.html">
+                Day 4 - Learning Schedule
+            </a>
+            |
+            <a href="../day-03-links-paths-media/index.html">
+                Day 3 - Home
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Practice Registration Form</h2>
+
+            <form action="#" method="get">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <p>
+                        <label for="fullname">Full Name:</label>
+                        <input
+                            type="text"
+                            id="fullname"
+                            name="fullname"
+                            minlength="2"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="email">Email Address:</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="age">Age:</label>
+                        <input
+                            type="number"
+                            id="age"
+                            name="age"
+                            min="13"
+                            max="100"
+                            required
+                        >
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Course Details</legend>
+
+                    <p>
+                        <label for="course">Choose Your Course:</label>
+
+                        <select id="course" name="course" required>
+                            <option value="">-- Select a Course --</option>
+                            <option value="web-development">Web Development</option>
+                            <option value="python">Python Programming</option>
+                            <option value="java">Java Programming</option>
+                            <option value="data-science">Data Science</option>
+                        </select>
+                    </p>
+
+                    <p>Choose Your Study Mode:</p>
+
+                    <input
+                        type="radio"
+                        id="online"
+                        name="study-mode"
+                        value="online"
+                        required
+                    >
+                    <label for="online">Online</label>
+
+                    <input
+                        type="radio"
+                        id="offline"
+                        name="study-mode"
+                        value="offline"
+                    >
+                    <label for="offline">Offline</label>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Learning Goals</legend>
+
+                    <p>
+                        <label for="goals">
+                            What do you want to learn?
+                        </label>
+                    </p>
+
+                    <textarea
+                        id="goals"
+                        name="goals"
+                        rows="5"
+                        cols="35"
+                        placeholder="Write your learning goals here..."
+                    ></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Confirmation</legend>
+
+                    <input
+                        type="checkbox"
+                        id="practice"
+                        name="practice"
+                        value="confirmed"
+                        required
+                    >
+
+                    <label for="practice">
+                        I confirm that I am using fictional practice data.
+                    </label>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Submit Practice Form</button>
+                </p>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created for Tech Fellows - Day 05 Practical Task.</p>
+    </footer>
+
+</body>
+</html>
