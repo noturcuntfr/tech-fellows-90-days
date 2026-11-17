@@ -1,0 +1,82 @@
+
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f0ff;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #6c63a8;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Main heading */
+h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+/* Section headings */
+h2 {
+    color: #51468b;
+}
+
+/* Main content */
+main {
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 20px;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* Navigation links */
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Section styling */
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd5f5;
+    border-radius: 10px;
+}
+
+/* Profile image */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #6c63a8;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
