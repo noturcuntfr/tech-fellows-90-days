@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="form-box">
+    <h1>Student Registration</h1>
+    <p class="subtitle">Join Tech Fellows ✦ Learn • Build • Grow</p>
+
+    <form action="#" method="POST">
+
+      <label for="name">Full Name <span class="required">*</span></label>
+      <input type="text" id="name" name="name" required placeholder="e.g. Diya M Patel">
+      <small class="hint">Enter your name as per Aadhaar</small>
+
+      <label for="email">Email <span class="required">*</span></label>
+      <input type="email" id="email" name="email" required placeholder="you@gmail.com">
+
+      <label for="pw">Password <span class="required">*</span></label>
+      <input type="password" id="pw" name="password" minlength="8" required>
+      <small class="hint">At least 8 characters</small>
+
+      <label for="phone">Phone Number <span class="required">*</span></label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="10-digit mobile">
+      <small class="hint">Without +91, only 10 digits</small>
+
+      <label>Gender <span class="required">*</span></label>
+      <div class="radio-group">
+        <label><input type="radio" name="gender" value="female" required> Female</label>
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="other"> Other</label>
+      </div>
+
+      <label for="course">Select Course <span class="required">*</span></label>
+      <select id="course" name="course" required>
+        <option value="">-- Choose Course --</option>
+        <option value="mern">MERN Stack</option>
+        <option value="data science">Data Science</option>
+        <option value="al/ml">AI/ML</option>
+        <option value="fullstack">Full Stack</option>
+      </select>
+
+      <button type="submit">Register Now</button>
+    </form>
+  </main>
+</body>
+</html>
