@@ -56,10 +56,6 @@ Part of Tech Fellows | 90-Day Full Stack Internship - Day 11 Mini Project.
 
 No installation needed.
 
-## 📸 Screenshot
-
-![Form Screenshot](screenshot.png)
-
 ## 👩‍💻 Author
 
 Made by Patel Diya - Tech Fellows Intern
