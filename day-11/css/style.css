@@ -1,0 +1,130 @@
+/* Base */
+body {
+  font-family: Arial, sans-serif;
+  color: #222;
+  margin: 8px;
+  border: 2px solid black;
+}
+
+section {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+h1, h2 { margin: 10px 0; }
+
+/* Task 1 - Inheritance */
+section:first-child {
+  color: red; /* body/section color inherited by p */
+}
+section:first-child ul { color: #222; } /* list back to dark */
+section:first-child a { color: inherit; }
+
+/* Task 2 - Specificity */
+p.note { color: red; }
+.note { color: blue; }
+#msg { color: green; }
+p.note { color: purple; }
+.note { color: blue !important; } /* Final winner = BLUE */
+
+/* Task 3 - Source Order */
+.box {
+  width: 150px;
+  height: 150px;
+  background: pink;
+  padding: 10px;
+}
+.box {
+  background: lightblue; /* Last wins = lightblue */
+}
+
+/* Task 4 - Color Formats - in a ROW */
+.colors {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.color-box {
+  width: 150px;
+  height: 120px;
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 15px;
+}
+.c1 { background: blue; }
+.c2 { background: #0000ff; }
+.c3 { background: #00f; }
+.c4 { background: rgb(0, 0, 255); }
+.c5 { background: rgba(0, 0, 255, 0.6); } /* Lighter */
+.c6 { background: hsl(240, 100%, 50%); }
+
+/* Task 5 - HSL Shades */
+.shade {
+  width: 150px;
+  height: 120px;
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 15px;
+}
+.s1 { background: hsl(210, 60%, 20%); }
+.s2 { background: hsl(210, 60%, 35%); }
+.s3 { background: hsl(210, 60%, 50%); }
+.s4 { background: hsl(210, 60%, 65%); color: #222; }
+.s5 { background: hsl(210, 60%, 80%); color: #222; }
+
+/* Task 6 */
+.trans {
+  width: 180px;
+  height: 100px;
+  background: blue;
+  color: white;
+  padding: 15px;
+}
+.trans-rgba { background: rgba(0, 0, 255, 0.5); }
+.trans-opacity { opacity: 0.5; }
+
+/* Task 7 */
+:root {
+  --primary: #1a73e8;
+  --bg: #f8f9fa;
+  --text: #202124;
+  --card-radius: 10px;
+}
+.card {
+  background: var(--bg);
+  border-radius: var(--card-radius);
+  padding: 20px;
+  border: 1px solid #ddd;
+  max-width: 400px;
+}
+.card h3 { color: var(--primary); margin-top: 0; }
+.card-text { color: var(--text) !important; } /* beats Task 2 red */
+.card button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+/* Task 8 - Debug Challenge - 6 mistakes fixed */
+
+/* Mistake 1: Was "highlight" - missing . for class selector, fixed to .highlight */
+.highlight {
+  /* Mistake 2: Was #ffff0 (5 digits) - hex needs 6 digits, fixed to #ffff00 */
+  background-color: #ffff00;
+  /* Mistake 3: Was "colour" - CSS uses "color", fixed to color */
+  /* Mistake 4: Was missing ; after darkblue, added ; */
+  color: darkblue;
+  font-size: 20px;
+}
+
+#title {
+  /* Mistake 5: Was rgb(300, 0, 0) - 300 is over max 255, fixed to 255 */
+  color: rgb(255, 0, 0);
+  /* Mistake 6: Was "centre" - CSS uses "center", fixed to center */
+  text-align: center;
+}
